@@ -1,0 +1,10 @@
+<keymap version="1" name="Mac OS X 10.5+ copy" parent="Mac OS X 10.5+">
+  <action id="EditorDeleteToLineEnd">
+    <keyboard-shortcut first-keystroke="alt back_space" />
+  </action>
+  <action id="EditorDeleteToLineStart">
+    <keyboard-shortcut first-keystroke="alt delete" />
+  </action>
+  <action id="EditorDeleteToWordEnd" />
+  <action id="EditorDeleteToWordStart" />
+</keymap>
