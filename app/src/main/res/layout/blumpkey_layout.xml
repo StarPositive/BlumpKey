@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.containsnojuice.davidjensen.blumpkey.BlumpKey xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/blumpkey_keyboard_height"
+    android:layout_gravity="bottom|center"
+    android:layout_alignParentBottom="true"
+    android:clickable="true"
+    android:focusable="true" >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false">
+
+        <com.containsnojuice.davidjensen.blumpkey.BlumpKeySideView
+            android:id="@+id/blumpkey_left_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="1.0"
+            android:background="@drawable/blumpkeyswipearea"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <com.containsnojuice.davidjensen.blumpkey.BlumpKeySideView
+            android:id="@+id/blumpkey_right_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="1.0"
+            android:background="#aaf"
+            android:clickable="false"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:clickable="false"
+        android:focusable="false" >
+
+        <com.containsnojuice.davidjensen.blumpkey.BlumpKeyScopeView
+            android:id="@+id/blumpkey_scope_view"
+            android:layout_width="@dimen/blumpkey_keyboard_scope_width"
+            android:layout_height="@dimen/blumpkey_keyboard_height"
+            android:layout_gravity="center"
+            android:alpha="1"
+            android:clickable="false"
+            android:focusable="false"
+            app:exampleColor="@android:color/black"
+            app:exampleDimension="24sp"
+            app:exampleDrawable="@drawable/blumpkeyboard"
+            app:exampleString="" />
+
+    </FrameLayout>
+
+</com.containsnojuice.davidjensen.blumpkey.BlumpKey>

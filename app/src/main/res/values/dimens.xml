@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="blumpkey_keyboard_height">150dp</dimen>
+    <dimen name="blumpkey_keyboard_scope_width">150dp</dimen>
+</resources>
